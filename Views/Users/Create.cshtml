@@ -1,0 +1,98 @@
+@model Lab17_Misyuro.Kirill_Validation.Models.User
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname" class="control-label"></label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateBirth" class="control-label"></label>
+                <input asp-for="DateBirth" class="form-control" />
+                <span asp-validation-for="DateBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringTest1" class="control-label"></label>
+                <input asp-for="StringTest1" class="form-control" />
+                <span asp-validation-for="StringTest1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringTest2" class="control-label"></label>
+                <input asp-for="StringTest2" class="form-control" />
+                <span asp-validation-for="StringTest2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringTest3" class="control-label"></label>
+                <input asp-for="StringTest3" class="form-control" />
+                <span asp-validation-for="StringTest3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringTest4" class="control-label"></label>
+                <input asp-for="StringTest4" class="form-control" />
+                <span asp-validation-for="StringTest4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RangeValidator" class="control-label"></label>
+                <input asp-for="RangeValidator" class="form-control" />
+                <span asp-validation-for="RangeValidator" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ipv4" class="control-label"></label>
+                <input asp-for="Ipv4" class="form-control" />
+                <span asp-validation-for="Ipv4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringLength" class="control-label"></label>
+                <input asp-for="StringLength" class="form-control" />
+                <span asp-validation-for="StringLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

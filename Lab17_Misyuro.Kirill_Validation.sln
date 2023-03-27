@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab17_Misyuro.Kirill_Validation", "Lab17_Misyuro.Kirill_Validation.csproj", "{2DFEBEE4-84B6-4009-AAA0-05EC0784C78E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DFEBEE4-84B6-4009-AAA0-05EC0784C78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFEBEE4-84B6-4009-AAA0-05EC0784C78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFEBEE4-84B6-4009-AAA0-05EC0784C78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFEBEE4-84B6-4009-AAA0-05EC0784C78E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
